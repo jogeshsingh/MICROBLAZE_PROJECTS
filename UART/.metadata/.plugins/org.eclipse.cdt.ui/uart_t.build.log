@@ -1,0 +1,21 @@
+20:16:42 **** Incremental Build of configuration Debug for project uart_t ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IE:/VIVADO_2022/Microblaze_Projects/design_1_wrapper_1/export/design_1_wrapper_1/sw/design_1_wrapper_1/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: uart_t.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/VIVADO_2022/Microblaze_Projects/design_1_wrapper_1/export/design_1_wrapper_1/sw/design_1_wrapper_1/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_t.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uart_t.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size uart_t.elf  |tee "uart_t.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7544	    336	   3192	  11072	   2b40	uart_t.elf
+'Finished building: uart_t.elf.size'
+' '
+
+20:16:43 Build Finished (took 1s.6ms)
+

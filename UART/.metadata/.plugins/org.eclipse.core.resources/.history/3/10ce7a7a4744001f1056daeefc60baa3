@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xuartlite.h"
+#include "xparameters.h"
+
+XUartLite uart_lite;
+
+void uart_tx() {
+    // Initialize the uart configuration
+    int status = XUartLite_Initialize(&uart_lite, XPAR_AXI_UARTLITE_0_DEVICE_ID);
+
+    // Check the initialization status
+    if (status == XST_SUCCESS) {
+        xil_printf("UART initialization is successfully completed\n");
+    } else {
+        xil_printf("UART initialization failed\n");
+    }
+}
+
+int main() {
+    u8 str[] = "hello";
+
+    uart_tx();
+
+    // Send the string
+    int sent_count = XUartLite_Send(&uart_lite, str, sizeof(str) - 1);
+
+    // Wait for transmission to complete
+    while (XUartLite_IsSending(&uart_lite));
+
+    // Check if all bytes were sent
+    if (sent_count == sizeof(str) - 1) {
+        xil_printf("Successfully ran Hello World application\n");
+    } else {
+        xil_printf("An error occurred while sending\n");
+    }
+
+    cleanup_platform();
+    return 0;
+}
