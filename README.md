@@ -15,7 +15,7 @@
 - **GPIO_DIP_SW_LED**
 
   - it controls the led's `on/off` status using dip switches , and
-    provides the status of which switch is on.
+    provides the status of which switch is on on UART terminal.
 
 
 
