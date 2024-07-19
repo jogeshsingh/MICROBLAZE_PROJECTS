@@ -1,0 +1,25 @@
+22:37:48 **** Incremental Build of configuration Debug for project gpio_sw_led ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IE:/VIVADO_2022/Microblaze_Projects/PROJECTS/GPIO_DIP_SW_LED/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:20: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+  105 |                    sleep(1);
+      |                    ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: gpio_sw_led.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/VIVADO_2022/Microblaze_Projects/PROJECTS/GPIO_DIP_SW_LED/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "gpio_sw_led.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpio_sw_led.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpio_sw_led.elf  |tee "gpio_sw_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7344	    340	   3140	  10824	   2a48	gpio_sw_led.elf
+'Finished building: gpio_sw_led.elf.size'
+' '
+
+22:37:49 Build Finished (took 955ms)
+

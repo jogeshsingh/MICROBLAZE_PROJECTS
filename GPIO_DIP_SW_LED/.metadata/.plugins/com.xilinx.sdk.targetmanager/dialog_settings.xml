@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="gpio_sw_led_system-bitFile" value="${project_loc:gpio_sw_led}/_ide/bitstream/design_1_wrapper.bit"/>
+	<item key="gpio_sw_led_system-bmmFile" value="${project_loc:gpio_sw_led}/_ide/bitstream/design_1_wrapper.mmi"/>
+	<item key="gpio_sw_led_system-target" value="Local"/>
+	<item key="gpio_sw_led_system-device" value="Auto Detect"/>
+	<item key="gpio_sw_led_system-partial_bit" value="false"/>
+	<item key="gpio_sw_led_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="gpio_sw_led_system"/>
+	<item key="gpio_sw_led_system-microblaze_0-initElf" value="bootloop"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Arty 210319A288EEA&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Arty-210319A288EEA-0362d093-0&quot;}}]}"/>
+</section>
