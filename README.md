@@ -12,7 +12,7 @@
 
   - it blinks leds on FPGA board. 
 
-- **GPIO_DIP_SWITCH_LED_CONTROL**
+- **GPIO_DIP_SW_LED**
 
   - it controls the led's `on/off` status using dip switches , and
     provides the status of which switch is on.
