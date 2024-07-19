@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="gpio_led_blink" location="E:/VIVADO_2022/Microblaze_Projects/PROJECTS/GPIO/gpio_led_blink" platform="E:/VIVADO_2022/Microblaze_Projects/PROJECTS/GPIO/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm" platformUID="xilinx:edgea7::0.0(custom)" systemProject="gpio_led_blink_system" sysConfig="design_1_wrapper" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="639e5114ca5d023816e683110db006ed">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.2035611018">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.495189383" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

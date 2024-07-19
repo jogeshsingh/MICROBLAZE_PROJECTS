@@ -1,0 +1,8 @@
+timestamp=[2024-07-19 19:00:06], mode=WORKBENCH_START, duration=0:00:51.341, duration_ms=51341, data={}
+timestamp=[2024-07-19 19:00:10], mode=WORKBENCH_UI_INIT, duration=0:00:03.241, duration_ms=3241, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-07-19 19:00:21], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:07.482, duration_ms=7482, data={}
+timestamp=[2024-07-19 19:03:27], mode=APP_CREATION, duration=0:01:06.786, duration_ms=66786, data={name=gpio_led_blink, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=design_1_wrapper, application_type=application}
+timestamp=[2024-07-19 19:04:52], mode=PLATFORM_GENERATION, duration=0:00:29.934, duration_ms=29934, data={name=design_1_wrapper}
+timestamp=[2024-07-19 19:14:27], mode=BUILD, duration=0:00:03.245, duration_ms=3245, data={name=gpio_led_blink, configuration=Debug, clean_build=false}
+timestamp=[2024-07-19 19:14:50], mode=BUILD, duration=0:00:05.529, duration_ms=5529, data={name=gpio_led_blink, configuration=Debug, clean_build=false}
+timestamp=[2024-07-19 19:14:51], mode=BUILD, duration=0:00:00.235, duration_ms=235, data={name=gpio_led_blink_system, configuration=Debug, clean_build=false}
